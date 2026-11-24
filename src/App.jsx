@@ -5,6 +5,7 @@ import Caja from "./components/Caja";
 import Boton from "./components/Boton";
 import Nota from "./components/Nota";
 import Etiqueta from "./components/Etiqueta";
+import Login from "./Login/Login";
 import './App.css'
 import ProductoDescuento  from "./components/ProductoDescuento";
 import Usuario from "./components/Usuario";
@@ -25,6 +26,7 @@ function App() {
       <Pedido estado="pendiente" />
       <ProductoDescuento nombre='Maximiliano capilar' precio={69.67} descuento={20}  />
       <Usuario nombre="Clemente" rol="Programador" />
+      <Login />
     </>
 );
 
