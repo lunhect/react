@@ -4,7 +4,7 @@ import CampoTexto from "./CampoTexto";
 
 export default function Login() {
   function manejarEnvio(evento) {
-    evento.preventDefault(); // evita que la página se recargue
+    evento.preventDefault();
     alert("Iniciando sesión...");
   }
 
@@ -23,10 +23,8 @@ export default function Login() {
         placeholder="Introduce tu contraseña"
       />
 
-      {/* Botón 1: valores por defecto (texto "Entrar", clase "btnprimario") + submit */}
       <Boton tipo="submit" />
 
-      {/* Botón 2: personalizado, la función se pasa por referencia (sin paréntesis) */}
       <Boton texto="Cancelar" clase="btn-secundario" onClick={manejarCancelar} />
     </form>
   );
